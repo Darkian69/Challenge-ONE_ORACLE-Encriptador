@@ -9,25 +9,29 @@
 </head>
 <body>
 
+<!--Header-->
+<header>
+    <img src="images/Logo.png" alt="logo" class="logo-header">
+    <p class="header-titulo">Encriptador de Texto ALURA</p>
+    <img src="images/candado.png" alt="Candado" class="candado-header">
 
+</header>
     <main class="container">
-    <!--Header-->
-        <header>
-            <img src="images/Logo.png" alt="logo" class="logo-header">
-            <p class="header-titulo">Encriptador de Texto ALURA</p>
-            <img src="images/candado.png" alt="Candado" class="candado-header">
-
-        </header>
+    
     <!--Cuerpo-->
     <section class="input-texto">
       
         <textarea name="entrada-texto" id="entrada" cols="30" rows="10"></textarea>
-        <button>Encriptar</button>
-        <button>Desencriptar</button>
+        <div class="botones-input">
+            <button class="btn-encriptar">Encriptar</button>
+            <button class="btn-desencriptar">Desencriptar</button>
+        </div>
+        
     </section>
 
     <div class="output-content">
         <p>Prueba de salida</p>
+        <textarea name="prueba" id="as" cols="30" rows="10"></textarea>
     </div>
     
         <!--Input-->
