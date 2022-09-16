@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    
+
+    <main class="container">
+    <!--Header-->
+        <header>
+            <img src="images/Logo.png" alt="logo" class="logo-header">
+            <p class="header-titulo">Encriptador de Texto ALURA</p>
+            <img src="images/candado.png" alt="Candado" class="candado-header">
+
+        </header>
+    <!--Cuerpo-->
+    <div>
+        <p>sdlfksdfjsdafsdf</p>
+    </div>
+        <!--Input-->
+        <!--Output-->
+
+    <!--Footer-->
+
+
+
+
+    </main>
+    <script>
+
+        function moverAsciiEncriptar(num, cesar) {
+            var output;
+            if(num >= 97 && num <= 122 && cesar >= 0 && cesar < 26){
+                if((num + cesar) > 122 ){
+                    output = (cesar - (122 - num)) + 96;
+                } else{
+                    output = num + cesar;
+                }
+            } else {
+                output = num;
+            }
+
+            return output;
+        }    
+
+        function moverAsciiDesencriptar(num, cesar) {
+            var output;
+            if(num >= 97 && num <= 122 && cesar >= 0 && cesar < 26){
+                if((num - cesar) < 97){
+                    output = 123 - (cesar - (num - 97));
+                } else{
+                    output = num - cesar;
+                }
+            } else {
+                output = num;
+            }
+            return output;
+        }
+        
+           
+
+        function encriptar(palabra, cesar) {
+            var salida = "";
+            palabra = palabra.toLowerCase();
+            var aux; //Sirve para recuperar los caracteres del ascii
+            for(var i = 0; i < palabra.length; i++){
+                var asciiAux = palabra[i].charCodeAt(0);
+                aux = String.fromCharCode(moverAsciiEncriptar(asciiAux, cesar));  //moverAsciiEncriptar devuelve el ascii encriptado y luego 
+                //se convierte en caracter y se guarda en aux
+                salida = salida + aux; // se va concatenando la nueva frase encriptada;
+            }
+            return salida;
+        }
+        
+        function desencriptar(palabra, cesar) {
+            var salida = "";
+            palabra = palabra.toLowerCase();
+            var aux; //Sirve para recuperar los caracteres del ascii
+            for(var i = 0; i < palabra.length; i++){
+                var asciiAux = palabra[i].charCodeAt(0);
+                aux = String.fromCharCode(moverAsciiDesencriptar(asciiAux, cesar));  //moverAsciiDesencriptar devuelve el ascii encriptado y luego 
+                //se convierte en caracter y se guarda en aux
+                salida = salida + aux; // se va concatenando la nueva frase encriptada;
+            }
+            return salida;
+        }
+        
+    </script>
+</body>
+</html>

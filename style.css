@@ -1,0 +1,28 @@
+.container{
+    border: 2px solid red;
+    width: 90%;
+    margin: auto;
+}
+
+.header-titulo{
+    color: red;
+    display: table-caption;
+}
+    
+
+
+.logo-header{
+    display: inline;
+    float: left;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.candado-header{
+    right: 10px;
+    top: -60px;
+    width: 100px;
+    display: inline;
+    float: right;
+    position: relative;
+}
