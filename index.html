@@ -8,7 +8,7 @@
     <title>Encriptador</title>
 </head>
 <body>
-    
+
 
     <main class="container">
     <!--Header-->
@@ -20,7 +20,7 @@
         </header>
     <!--Cuerpo-->
     <div>
-        <p>Soy Francessco virgolini, FIUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUu x2</p>
+        <p>Soy Francessco virgolini, FIUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUu x2 el pepe</p>
     </div>
         <!--Input-->
         <!--Output-->
@@ -46,7 +46,7 @@
             }
 
             return output;
-        }    
+        }
 
         function moverAsciiDesencriptar(num, cesar) {
             var output;
@@ -61,8 +61,8 @@
             }
             return output;
         }
-        
-           
+
+
 
         function encriptar(palabra, cesar) {
             var salida = "";
@@ -70,26 +70,26 @@
             var aux; //Sirve para recuperar los caracteres del ascii
             for(var i = 0; i < palabra.length; i++){
                 var asciiAux = palabra[i].charCodeAt(0);
-                aux = String.fromCharCode(moverAsciiEncriptar(asciiAux, cesar));  //moverAsciiEncriptar devuelve el ascii encriptado y luego 
+                aux = String.fromCharCode(moverAsciiEncriptar(asciiAux, cesar));  //moverAsciiEncriptar devuelve el ascii encriptado y luego
                 //se convierte en caracter y se guarda en aux
                 salida = salida + aux; // se va concatenando la nueva frase encriptada;
             }
             return salida;
         }
-        
+
         function desencriptar(palabra, cesar) {
             var salida = "";
             palabra = palabra.toLowerCase();
             var aux; //Sirve para recuperar los caracteres del ascii
             for(var i = 0; i < palabra.length; i++){
                 var asciiAux = palabra[i].charCodeAt(0);
-                aux = String.fromCharCode(moverAsciiDesencriptar(asciiAux, cesar));  //moverAsciiDesencriptar devuelve el ascii encriptado y luego 
+                aux = String.fromCharCode(moverAsciiDesencriptar(asciiAux, cesar));  //moverAsciiDesencriptar devuelve el ascii encriptado y luego
                 //se convierte en caracter y se guarda en aux
                 salida = salida + aux; // se va concatenando la nueva frase encriptada;
             }
             return salida;
         }
-        
+
     </script>
 </body>
 </html>
