@@ -26,3 +26,8 @@
     float: right;
     position: relative;
 }
+
+.input-texto{
+    width: 50%;
+    display: inline-block;
+}
