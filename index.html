@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Encriptador</title>
 </head>
 <body>
@@ -19,30 +21,32 @@
     <main class="container">
     
     <!--Cuerpo-->
+    <!--Input-->
     <section class="input-content">
       
-        <textarea name="entrada-texto" id="entrada-texto" cols="30" rows="10"></textarea>
+        <textarea name="entrada-texto" id="entrada-texto" placeholder="Ingrese texto" cols="30" rows="10"></textarea>
         <div class="botones-input">
-            <button class="btn-encriptar">Encriptar</button>
+            <button class="btn-encriptar" onclick="capturar()">Encriptar</button>
             <button class="btn-desencriptar">Desencriptar</button>
         </div>
         
     </section>
-
-    <div class="output-content">
-        <p>Prueba de salida xd pruebas</p>
-    </div>
     
-        <!--Input-->
-        <!--Output-->
+    <!--Output-->
+    <section class="output-content">
+        <p id="text-output">Prueba de salida xd pruebas</p>
+    </section>
+    
+        
 
-    <!--Footer-->
-
+   
 
 
 
     </main>
-    <script>
+     <!--Footer-->
+     <footer>Creado por Juan Andres Aguirre</footer>
+   <!-- <script>
 
         function moverAsciiEncriptar(num, cesar) {
             var output;
@@ -101,6 +105,6 @@
             return salida;
         }
 
-    </script>
+    </script> -->
 </body>
 </html>
