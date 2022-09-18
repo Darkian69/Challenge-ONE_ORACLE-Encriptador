@@ -2,6 +2,7 @@
     border: 2px solid red;
     width: 90%;
     margin: auto;
+    display: flex;
 }
 
 .header-titulo{
@@ -27,7 +28,18 @@
     position: relative;
 }
 
-.input-texto{
+.input-content{
+    margin: 40px;
     width: 50%;
-    display: inline-block;
+    background-color: blue;
+}
+
+#entrada-texto{
+    width: 95%;
+}
+
+.output-content{
+    margin: 40px;
+    width: 50%;
+    background-color: red;
 }
