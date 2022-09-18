@@ -33,7 +33,7 @@
 .input-content{
     margin: 40px;
     width: 50%;
-    background-color: blue;
+    background-color: none;
 }
 
 #entrada-texto{
@@ -43,5 +43,7 @@
 .output-content{
     margin: 40px;
     width: 50%;
-    background-color: red;
+    background-color: none;
 }
+
+
