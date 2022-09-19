@@ -1,34 +1,52 @@
-.container{
-    border: 2px solid red;
-    width: 90%;
-    margin: auto;
-    display: flex;
-    height: 700px;
+body{
+    background-color: aqua;
     
 }
 
+header{
+    height: 110px;
+    margin: 25px 138px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 80px;
+    width: 80%;
+ 
+}
 .header-titulo{
     color: blue;
-    display: table-caption;
+    display: inline;
+    font-size: 50px;
+    font-weight: bold;
+    
 }
     
 
 
 .logo-header{
-    display: inline;
-    float: left;
-    margin-top: 20px;
-    margin-right: 10px;
+    width: 50px;
+    margin-left: 1em;
 }
 
 .candado-header{
-    right: 10px;
-    top: -60px;
-    width: 100px;
-    display: inline;
-    float: right;
-    position: relative;
+    
+    width: 120px;
+    
 }
+
+
+.container{
+    background-color: aquamarine;
+    width: 70%;
+    margin: 0 200px;
+    display: flex;
+    height: 700px;
+    
+}
+
+
 
 .input-content{
     margin: 40px;
@@ -36,8 +54,11 @@
     background-color: none;
 }
 
+
 #entrada-texto{
     width: 95%;
+    background: none;
+    border: none;
 }
 
 .output-content{
@@ -46,4 +67,18 @@
     background-color: none;
 }
 
+
+footer{
+    text-align: center;
+    height: 110px;
+    margin: -1px 146px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 80px;
+    width: 82%;
+
+}
 
