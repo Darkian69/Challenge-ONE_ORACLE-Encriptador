@@ -46,9 +46,9 @@ background-attachment: fixed;
 background-size: cover;
 
     width: 70%;
-    margin: 0 200px;
+    margin: 0 230px;
     display: flex;
-    height: 700px;
+    height: 600px;
     
 }
 
@@ -72,6 +72,54 @@ background-size: cover;
     margin: 10px 5px;
 }
 
+.botones-input {
+    margin: 50px 20px;
+    margin-left: 120px;
+}
+
+.btn-encriptar{
+    background: #fcd99c;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
+.btn-encriptar:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+.btn-encriptar:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+
+   .btn-desencriptar{
+    background: #fcd99c;
+    font-family: inherit;
+    padding: 0.6em 1.1em;
+    margin-left: 35px;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
+.btn-desencriptar:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+.btn-desencriptar:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+
 .output-content{
     margin: 40px;
     width: 50%;
@@ -86,6 +134,28 @@ background-size: cover;
     margin: 10px 10px ;
 }
 
+.copy-btn{
+    background: #fcd99c;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    margin: 40px 100px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+}
+
+.copy-btn:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
+   }
+   
+.copy-btn:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+
 
 footer{
     text-align: center;
@@ -97,7 +167,7 @@ footer{
     justify-content: space-between;
     background-color: #fcd99c;
     border-radius: 80px;
-    width: 82%;
+    width: 80%;
 
 }
 
