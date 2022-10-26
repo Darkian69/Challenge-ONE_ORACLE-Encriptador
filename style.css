@@ -73,8 +73,10 @@ background-size: cover;
 }
 
 .botones-input {
-    margin: 50px 20px;
-    margin-left: 120px;
+    position: relative;
+    top: 100px;
+    left: 60px;
+    margin: 0 20px;
 }
 
 .btn-encriptar{
@@ -102,7 +104,7 @@ background-size: cover;
     background: #fcd99c;
     font-family: inherit;
     padding: 0.6em 1.1em;
-    margin-left: 35px;
+    margin-left: 75px;
     font-weight: 900;
     font-size: 18px;
     border: 3px solid black;
@@ -126,6 +128,7 @@ background-size: cover;
     background-color:#ff8243;
     border-radius: 12px ;
     border: 5px solid #ffd792;
+    padding: 35px;
 
 }
 
@@ -140,10 +143,15 @@ background-size: cover;
     padding: 0.6em 1.3em;
     font-weight: 900;
     font-size: 18px;
-    margin: 40px 100px;
+    margin: auto;
     border: 3px solid black;
     border-radius: 0.4em;
     box-shadow: 0.1em 0.1em;
+    position: relative;
+    left: 200px;
+    top: 210px;
+   
+    
 }
 
 .copy-btn:hover {
@@ -171,3 +179,9 @@ footer{
 
 }
 
+footer p{
+    margin-left: 600px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    
+}
